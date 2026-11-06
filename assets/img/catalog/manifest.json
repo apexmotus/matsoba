@@ -1,0 +1,26 @@
+[
+  {
+    "file": "assets/img/catalog/catalog-red-roses-gyps.webp",
+    "name": "20 Red Roses & Gyps",
+    "price": 850,
+    "desc": "A bold, romantic bouquet of 20 fresh red roses with gypsophila, hand-wrapped in signature paper.",
+    "w": 1179,
+    "h": 1196
+  },
+  {
+    "file": "assets/img/catalog/catalog-mixed-roses-gyps.webp",
+    "name": "20 Mixed Roses & Gyps",
+    "price": 650,
+    "desc": "A vibrant mix of 20 seasonal roses in red, pink, orange and white, finished with soft gypsophila.",
+    "w": 1166,
+    "h": 1200
+  },
+  {
+    "file": "assets/img/catalog/catalog-bridal-bouquet.webp",
+    "name": "Bridal Bouquet",
+    "price": 950,
+    "desc": "An elegant hand-tied bouquet of white roses and gypsophila, finished with natural twine \u2014 made for your big day.",
+    "w": 1169,
+    "h": 1200
+  }
+]
