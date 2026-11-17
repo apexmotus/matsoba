@@ -334,6 +334,9 @@ section { padding: 88px 0; }
   margin-top: 36px;
 }
 .location-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--cream);
   border-radius: var(--radius-sm);
   padding: 20px 18px;
@@ -348,6 +351,16 @@ section { padding: 88px 0; }
 }
 .location-card h4 { font-size: 1.02rem; margin-bottom: 2px; }
 .location-card span { color: var(--ink-soft); font-size: 0.85rem; }
+.location-card .directions {
+  margin-top: auto;
+  padding-top: 10px;
+  color: var(--rose-dark);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.location-card .directions i { font-size: 0.7rem; transition: transform var(--speed); }
+.location-card:hover .directions i { transform: translateX(3px); }
+.location-card:focus-visible { outline: 2px solid var(--rose-dark); outline-offset: 3px; }
 
 @media (max-width: 880px) {
   .intro-grid { grid-template-columns: 1fr; }
