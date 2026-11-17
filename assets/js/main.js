@@ -1,4 +1,4 @@
-// Matšoba Floral — site interactivity
+// Matšoba Floral & Gifting — site interactivity
 (function () {
   'use strict';
 
@@ -158,7 +158,7 @@
       var branchLabel = branch.options[branch.selectedIndex].text;
       var notes = quoteForm.querySelector('#q-notes').value.trim();
 
-      var lines = ['Hi Matšoba Floral! I\'d like a quote:'];
+      var lines = ['Hi Matšoba Floral & Gifting! I\'d like a quote:'];
       lines.push('• Bouquet: ' + bouquetLabel);
       if (stems) lines.push('• Stems: ' + stems);
       lines.push('• Preferred branch: ' + branchLabel);
@@ -177,7 +177,7 @@
       var item = btn.getAttribute('data-wa-item');
       var price = btn.getAttribute('data-wa-price');
       var message = encodeURIComponent(
-        'Hi Matšoba Floral! I\'d like to order: ' + item + (price ? ' (R' + price + ')' : '') + '. Please confirm availability and delivery.'
+        'Hi Matšoba Floral & Gifting! I\'d like to order: ' + item + (price ? ' (R' + price + ')' : '') + '. Please confirm availability and delivery.'
       );
       var url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + message;
       window.open(url, '_blank', 'noopener');
