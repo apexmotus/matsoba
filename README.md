@@ -1,6 +1,6 @@
 # Matšoba Floral & Gifting
 
-Website for **Matšoba Floral & Gifting**, a florist with three branches in Limpopo: Lebowakgomo, Burgersfort and Ga‑Nchabeleng.
+Website for **Matšoba Floral & Gifting**, a florist with three branches in Limpopo: Lebowakgomo, Burgersfort and Ga-Nkwana.
 
 Live site: https://matsobafloral.co.za
 
@@ -54,7 +54,7 @@ Current map links:
 |---|---|
 | Lebowakgomo | Google Business listing: `https://maps.google.com/?cid=12033186792989066412` |
 | Burgersfort | Pin at -24.66725, 30.320583 |
-| Ga‑Nchabeleng | Pin at -24.420583, 29.794 |
+| Ga-Nkwana | Pin at -24.420583, 29.794 |
 
 If you get a link from the Google Maps app, make sure it isn't a **directions** link. A directions link has your current location built in as the starting point. Use **Share** on the place itself instead.
 
@@ -94,7 +94,7 @@ After changing JSON‑LD, check it with Google's [Rich Results Test](https://sea
 
 Things that help ranking but have to be done outside the code:
 - Verify the site in [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters), and submit `https://matsobafloral.co.za/sitemap.xml`. Bing also feeds ChatGPT search and Copilot.
-- Create Google Business Profiles for Burgersfort and Ga‑Nchabeleng. Only Lebowakgomo has one so far.
+- Create Google Business Profiles for Burgersfort and Ga-Nkwana. Only Lebowakgomo has one so far.
 - Add opening hours and street addresses once they're known, both on the page and in the JSON‑LD (`openingHoursSpecification`, `streetAddress`).
 
 ## Deployment
@@ -102,5 +102,7 @@ Things that help ranking but have to be done outside the code:
 The site is hosted on Vercel. The source is on GitHub at [apexmotus/matsoba](https://github.com/apexmotus/matsoba), and `main` is the production branch. `vercel.json` turns on clean URLs (`/catalog` instead of `/catalog/index.html`) and caches everything under `/assets` for a year.
 
 Because of that long cache, **give a changed image a new file name** instead of overwriting the old one. Otherwise returning visitors may keep seeing the old image.
+
+**Analytics:** both pages load Vercel Web Analytics from `/_vercel/insights/script.js`, just before `</body>`. It only records visits on the live site, not on `localhost`. View the numbers in the Vercel dashboard under the project's **Analytics** tab. Add the same two `<script>` tags to any new page.
 
 Screenshots are excluded from git (`.gitignore`). The original photos in `catalog/*.jpg` are kept in git but left out of deployments (`.vercelignore`).
